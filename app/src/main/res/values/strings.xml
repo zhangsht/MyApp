@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="main_page_title">main page</string>
+    <string name="text_to_transition">跳转到Transition</string>
+</resources>
