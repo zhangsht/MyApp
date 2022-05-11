@@ -6,13 +6,13 @@ import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.Explode
 import android.view.Window
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.test.myapp.R
 import com.test.myapp.activity.TransitionActivity
+import com.test.myapp.base.BaseActivity
 import com.test.myapp.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
