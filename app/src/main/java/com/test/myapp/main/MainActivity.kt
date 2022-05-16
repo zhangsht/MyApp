@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.Explode
 import android.view.Window
+import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import com.test.myapp.R
 import com.test.myapp.activity.TransitionActivity
@@ -28,6 +29,10 @@ class MainActivity : BaseActivity() {
                 startActivity(it, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
             }
 
+        }
+
+        if (binding.iconMain is ImageView) {
+            binding.iconMain.setImageDrawable(getDrawable(R.mipmap.ic_launcher))
         }
     }
 }
