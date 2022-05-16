@@ -35,9 +35,24 @@
             <Button
                 android:id="@+id/jumpBtn"
                 android:text="@string/text_to_transition"
+                android:textSize="16sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/showFragment"
+                android:text="add fragment"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnContainer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
